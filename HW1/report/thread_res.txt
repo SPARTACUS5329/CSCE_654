@@ -1,0 +1,6 @@
+Time for 1 threads: 20.711792 s,   Rate: 0.83 GFLOP/s
+Time for 2 threads: 10.437515 s,   Rate: 1.65 GFLOP/s
+Time for 4 threads: 7.335281 s,   Rate: 2.34 GFLOP/s
+Time for 8 threads: 3.785891 s,   Rate: 4.54 GFLOP/s
+Time for 16 threads: 3.338311 s,   Rate: 5.15 GFLOP/s
+Time for 32 threads: 3.372862 s,   Rate: 5.09 GFLOP/s
