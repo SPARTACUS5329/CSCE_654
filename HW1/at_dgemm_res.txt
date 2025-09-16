@@ -1,0 +1,12 @@
+Time for 32 threads: 3.400454 s,   Rate: 5.05 GFLOP/s
+Time for attention_via_dgemm: 1.928605 s,   Rate: 8.91 GFLOP/s
+Time for 16 threads: 3.352112 s,   Rate: 5.13 GFLOP/s
+Time for attention_via_dgemm: 1.916483 s,   Rate: 8.96 GFLOP/s
+Time for 8 threads: 3.793189 s,   Rate: 4.53 GFLOP/s
+Time for attention_via_dgemm: 2.410307 s,   Rate: 7.13 GFLOP/s
+Time for 4 threads: 7.450692 s,   Rate: 2.31 GFLOP/s
+Time for attention_via_dgemm: 4.240441 s,   Rate: 4.05 GFLOP/s
+Time for 2 threads: 10.472352 s,   Rate: 1.64 GFLOP/s
+Time for attention_via_dgemm: 7.195698 s,   Rate: 2.39 GFLOP/s
+Time for 1 threads: 20.731495 s,   Rate: 0.83 GFLOP/s
+Time for attention_via_dgemm: 14.150043 s,   Rate: 1.21 GFLOP/s
