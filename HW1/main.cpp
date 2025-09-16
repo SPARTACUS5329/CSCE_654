@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
   for (auto &x : B)
     x = ud(rng);
 
-  const double flop = 2.0 * (double)m * n * k;
+  double flop = 2.0 * (double)m * n * k;
 
   double t0 = omp_get_wtime();
 
@@ -65,6 +65,7 @@ int main(int argc, char **argv) {
 
   t1 = omp_get_wtime();
 
+  flop = (4 * L * L * D) + (60 * L * L);
   gflops = (flop / (t1 - t0)) * 1e-9;
   std::printf("Time for attention_via_dgemm: %.6f s,   Rate: %.2f GFLOP/s\n",
               (t1 - t0), gflops);
@@ -89,11 +90,11 @@ int main(int argc, char **argv) {
     }
   }
 
-  // try {
-  // verify_dgemm_vs_mkl(A.data(), B.data(), C.data(), m, n, k);
-  // } catch (const std::exception &e) {
-  // std::printf("[verify] %s\n", e.what());
-  // }
+  try {
+    verify_dgemm_vs_mkl(A.data(), B.data(), C.data(), m, n, k);
+  } catch (const std::exception &e) {
+    std::printf("[verify] %s\n", e.what());
+  }
 
   // similarly call other functions
   return 0;

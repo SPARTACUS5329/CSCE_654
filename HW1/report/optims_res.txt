@@ -1,7 +1,0 @@
-Time for 32 threads with schedule(static, 128): 3.397959 s,   Rate: 5.06 GFLOP/s
-Time for 32 threads with schedule(dynamic, 64): 3.349360 s,   Rate: 5.13 GFLOP/s
-Time for 32 threads with schedule(dynamic, 128): 3.353105 s,   Rate: 5.12 GFLOP/s
-Time for 32 threads with schedule(dynamic, 256): 3.875465 s,   Rate: 4.43 GFLOP/s
-Time for 32 threads with schedule(guided, 64): 3.380974 s,   Rate: 5.08 GFLOP/s
-Time for 32 threads with schedule(guided, 128): 3.408114 s,   Rate: 5.04 GFLOP/s
-Time for 32 threads with collapse(2): 3.518410 s,   Rate: 4.88 GFLOP/s
